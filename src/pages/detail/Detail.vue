@@ -39,7 +39,7 @@ interface ItemInterface {
 }
 
 export default defineComponent({
-  name: "App",
+  name: "DetailPage",
   components: {
     DefaultForm,
     DefaultItem,

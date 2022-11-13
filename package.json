@@ -9,9 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "moment": "^2.29.4",
     "lodash.uniqueid": "^4.0.1",
-    "vue": "^3.2.13"
+    "moment": "^2.29.4",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@types/lodash.uniqueid": "^4.0.7",

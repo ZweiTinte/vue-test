@@ -1,4 +1,5 @@
 import { createApp } from "vue";
-import App from "./App.vue";
+import DetailPage from "./Detail.vue";
+import router from "../../router/index";
 
-createApp(App).mount("#app");
+createApp(DetailPage).use(router).mount("#app");
