@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1>Routing</h1>
-    <router-link to="/login">Home</router-link>
+  <div id="app">
     <router-view></router-view>
   </div>
 </template>
@@ -11,7 +9,6 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "App",
-  components: {},
 });
 </script>
 
