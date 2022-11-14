@@ -1,0 +1,32 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin defaultBorderBackground {
+  border-radius: 0.25rem;
+  border: 0.15rem solid $blue3;
+  background-color: $buttonBackground;
+}
+
+@mixin cardBorderBackground {
+  border-radius: 0.4rem;
+  border: 0.25rem solid $cardBorder;
+  background-color: $cardBackground;
+}
+
+@mixin defaultInput {
+  outline: none;
+  font-size: 1rem;
+  color: $white;
+}
+
+@mixin flexCol {
+  flex-direction: column;
+  display: flex;
+}
+
+@mixin flexSpace {
+  display: flex;
+  justify-content: space-between;
+}

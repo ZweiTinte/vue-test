@@ -7,21 +7,17 @@ body {
 }
 
 .pageLayout {
-  display: flex;
-  justify-content: center;
+  @include flexCenter;
   align-items: center;
   flex-direction: column;
 }
 
 .formCard {
-  display: flex;
-  justify-content: center;
+  @include flexCenter;
+  @include cardBorderBackground;
   margin: 0.5rem 0.5rem 0.5rem;
   align-items: center;
   width: 34rem;
-  border-radius: 0.4rem;
-  border: 0.25rem solid $cardBorder;
-  background-color: $cardBackground;
   flex-direction: column;
 }
 
@@ -30,16 +26,12 @@ form {
 }
 
 .formSubmit {
-  outline: none;
-  font-size: 1rem;
-  color: $white;
-  background-color: $buttonBackground;
+  @include defaultBorderBackground;
+  @include defaultInput;
   width: 10rem;
   cursor: pointer;
   padding: 0.5rem;
   margin-top: 1rem;
-  border-radius: 0.25rem;
-  border: 0.15rem solid $blue3;
   &:hover {
     background-color: $green1;
     border-color: $green2;
@@ -47,12 +39,8 @@ form {
 }
 
 .formTextInput {
-  outline: none;
-  font-size: 1rem;
-  color: $white;
-  background-color: $buttonBackground;
-  border-radius: 0.25rem;
-  border: 0.15rem solid $blue3;
+  @include defaultBorderBackground;
+  @include defaultInput;
   height: 1.9rem;
   line-height: 1.5rem;
   padding-left: 0.5rem;
@@ -67,8 +55,7 @@ form {
 }
 
 .formRow {
-  display: flex;
-  justify-content: space-between;
+  @include flexSpace;
   padding-bottom: 1rem;
   width: 30rem;
 }
@@ -79,12 +66,8 @@ ul {
 }
 
 button {
-  border-radius: 0.25rem;
-  border: 0.15rem solid $blue3;
-  outline: none;
-  font-size: 1rem;
-  color: $white;
-  background-color: $buttonBackground;
+  @include defaultBorderBackground;
+  @include defaultInput;
   cursor: pointer;
   padding: 0.5rem;
   &:hover {
@@ -94,22 +77,18 @@ button {
 }
 
 .itemTitle {
-  display: flex;
-  justify-content: space-between;
+  @include flexSpace;
   margin-bottom: 0.5rem;
 }
 
 .itemInfo {
-  display: flex;
-  flex-direction: column;
+  @include cardBorderBackground;
+  @include flexCol;
   width: 30rem;
   padding: 0.5rem;
   color: $white;
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  border-radius: 0.4rem;
-  border: 0.25rem solid $cardBorder;
-  background-color: $cardBackground;
 }
 
 .itemText {
@@ -119,17 +98,12 @@ button {
 }
 
 .textArea {
-  flex-direction: column;
-  display: flex;
+  @include flexCol;
 }
 
 .formTextAreaInput {
-  outline: none;
-  font-size: 1rem;
-  color: $white;
-  background-color: $buttonBackground;
-  border-radius: 0.25rem;
-  border: 0.15rem solid $blue3;
+  @include defaultBorderBackground;
+  @include defaultInput;
   height: 10rem;
   line-height: 1.5rem;
   padding-left: 0.5rem;
@@ -138,9 +112,8 @@ button {
 }
 
 .textAreaInfo {
+  @include defaultInput;
   padding-top: 0.5rem;
   padding-right: 0.25rem;
-  color: $white;
-  font-size: 1rem;
   text-align: end;
 }
