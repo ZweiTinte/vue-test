@@ -25,7 +25,7 @@ const router = createRouter({
 });
 
 router.beforeEach(async (to) => {
-  const login =
+  const login: { name: string; password: string } | null =
     localStorage.getItem("login") !== null
       ? JSON.parse(localStorage.getItem("login") as string)
       : null;

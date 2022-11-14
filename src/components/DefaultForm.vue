@@ -66,7 +66,7 @@ export default defineComponent({
       titleInput: this.title,
       textInput: this.text,
       dateInput: this.date,
-      textAreaLength: "0",
+      textAreaLength: this.text.length.toString(),
     };
   },
   methods: {
@@ -112,93 +112,4 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
-$black: #000000;
-$white: #ffffff;
-$buttonBackground: #303030;
-$cardBorder: #5a6969;
-$cardBackground: #2d3a3b;
-$green1: #097e05;
-$green2: #03550a;
-$red1: #b40505;
-$red2: #570202;
-$blue1: #0e2c8f;
-$blue2: #025f69;
-$blue3: #2acbe0;
-$blue4: #24afc2;
-
-form {
-  padding: 1rem 1rem 0rem;
-}
-
-.textArea {
-  flex-direction: column;
-  display: flex;
-}
-
-.formSubmit {
-  outline: none;
-  font-size: 1rem;
-  color: $white;
-  background-color: $buttonBackground;
-  width: 10rem;
-  cursor: pointer;
-  padding: 0.5rem;
-  margin-top: 1rem;
-  border-radius: 0.25rem;
-  border: 0.15rem solid $blue3;
-  &:hover {
-    background-color: $green1;
-    border-color: $green2;
-  }
-}
-
-.formTextInput {
-  outline: none;
-  font-size: 1rem;
-  color: $white;
-  background-color: $buttonBackground;
-  border-radius: 0.25rem;
-  border: 0.15rem solid $blue3;
-  height: 1.9rem;
-  line-height: 1.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  width: 15rem;
-}
-
-.formTextAreaInput {
-  outline: none;
-  font-size: 1rem;
-  color: $white;
-  background-color: $buttonBackground;
-  border-radius: 0.25rem;
-  border: 0.15rem solid $blue3;
-  height: 10rem;
-  line-height: 1.5rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  width: 15rem;
-}
-
-.formLabel {
-  padding-top: 0.5rem;
-  color: $white;
-  font-size: 1.25rem;
-}
-
-.textAreaInfo {
-  padding-top: 0.5rem;
-  padding-right: 0.25rem;
-  color: $white;
-  font-size: 1rem;
-  text-align: end;
-}
-
-.formRow {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  width: 30rem;
-}
-</style>
+<style lang="scss"></style>
